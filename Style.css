@@ -5,6 +5,7 @@
 	 box-sizing: border-box;
   }	 
   
+  /* Edita as características gerais da página*/
   body{
 	 font-family: 'Poppins', sans-serif; /* Fonte para a página como um todo*/
        }
@@ -46,9 +47,11 @@
         color: AliceBlue;
     }
 
+     /* Edita a tag p pertencente aos paragráfos da página*/
    p{
       color: black;
-	  font-family:Calibri;
+	  font-family:Times New Roman;
+	  font-size: 20px;
     }	  
 	
 	  /* Edita a classe container*/
@@ -97,6 +100,7 @@
 		transition: background 0.5s;
 	}
 	
+	/* Modifica a cor do botão ao passar o mouse por ele pela cor DodgerBlue*/
 	.btn:hover{
 		background: DodgerBlue;
 	}
@@ -110,32 +114,101 @@
 		margin-top: 70px;
 	}
 	
-	.col-3{
-		flex-basis: 30%;
-		min-width:280px;
-		margin-bottom:50px;
+	/* Edita a margin das imagens ilustrativas*/
+	.categorias{
+		margin: 50px 0;
 	}
 	
-	/* Tenho que revisar o tamanho*/
+    /*Edita a classe das imagens ilustrativas*/
+	.col-3{
+		flex-basis: 30%;
+		min-width:250px;
+		margin-bottom:30px;
+	}
+	
+	/*Tenho que revisar o tamanho*/
 	.col-3 img{
 		width:99%;
 	}
 	
-    .small-container{
+    /*Edita a classe small-container*/
+	.small-container{
      max-width:1080px;
      margin: auto;
-     padding-left:25px;
-     padding-right:25px;
-	}	
-
+     padding-left:35px;
+     padding-right:35px;
+	}
+	
+    /*Edita a classe col-4*/ 
     .col-4{
 		flex-basis: 25%;
 		padding: 10px;
 		max-width: 200px;
 		margin-bottom: 50px;
+		transition: transform 1s;
 	}
 	
+	 /*Edita o tamanho das imagens da classe col-4*/ 
 	.col-4 img{
 		width: 100%;
 	}	
-		
+	
+	/*Edita a classe titulo*/ 
+    .titulo{ 
+          text-align: center;
+          margin: 0 auto 40px;
+          position: relative;
+          line-height: 60px;
+          color: black;
+		  font-weight: bold;
+	}
+    
+	/*Cria a linha abaixo do titulo*/
+    .titulo::after{
+		     content:'';
+			 background:SlateGray;
+			 width: 80px;
+			 height: 5px;
+			 border-radius: 4px;
+			 position:absolute;
+			 bottom: 0;
+			 left: 50%;
+			 transform: translateX(-50%);
+	}
+       
+    /*Edita a classe titulo*/ 	   
+    h4{
+        color:black;
+        font-weight: bold;
+	}
+	
+	.col-4 p{
+		font-size: 15px;
+	}
+
+    /*Edita a classe Avalição*/ 
+    .Avaliação .fa{
+     color:SlateGray;
+	}
+
+    /*Cria o efeito hover nas imagens da classe col-4*/
+    .col-4:hover{
+           transform: translateX(-15px);
+	}
+
+     /*Edita a classe oferta*/ 
+    .oferta{
+             background: radial-gradient(white,SlateGray);
+			 margin-top:80px;
+			 padding: 30px 0;
+	} 
+	
+	/*Edita a tag small do texto do mi brand*/ 
+	small{
+		color: black;
+		font-size: 17x;
+		font-weight: bold;
+	}
+     		
+
+		 
