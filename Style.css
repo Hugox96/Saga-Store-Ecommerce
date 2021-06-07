@@ -89,6 +89,8 @@
 		margin: 25px 0;
 	}
 	
+	
+	
 	 /* Edita a classe btn*/
 	.btn{
 		display: inline-block;
@@ -196,6 +198,8 @@
            transform: translateX(-15px);
 	}
 
+ /*---------------Oferta-------------------*/
+
      /*Edita a classe oferta*/ 
     .oferta{
              background: radial-gradient(white,SlateGray);
@@ -208,7 +212,50 @@
 		color: black;
 		font-size: 17x;
 		font-weight: bold;
+		
 	}
+/*--------------- Depoimentos -------------------*/	
+	
+	.depoimentos{
+		padding-top: 100px;
+	}
+	
+	
+	/*Cria o box das imagens dos clientes*/ 
+	.depoimentos .col-3{
+		text-aling: center;
+		padding: 40px 20px;
+		box-shadow: 0 0 20px 10px rgba(0,0,1,0.2);
+		cursor: pointer;
+		transition: transform 0.5s;
+	}
+	
+	/*Edita as imagens dos depoimentos dos clientes*/ 
+	.depoimentos .col-3 img{		
+		width: 90px;     /*Edita o tamanho da imagem*/ 
+		margin-top: 20px;
+		border-radius: 50%; /*Edita o tamanho da borda*/ 
+	}
+	
+	/*Edita o efeito de elevação das imagens dos depoimentos*/ 
+	.depoimentos .col-3:hover{		
+		transform: translateY(-30px); /* Quanto maior o número, maior será o efeito de elevação*/
+	}
+	
+	/*Edita o efeito das aspas das imagens dos depoimentos*/ 
+	.fa.fa-quote-left{
+		font-size:34px;
+		color: SlateGray;
+	}
+	
+	/*Edita o textos do depoimentos*/ 
+	.col-3 p{
+		font-size:17 px;
+		margin: 12px 0;
+		color: black;
+		font-weight: bold;
+	}
+	
      		
 
 		 
