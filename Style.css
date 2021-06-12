@@ -202,7 +202,7 @@
 
      /*Edita a classe oferta*/ 
     .oferta{
-             background: radial-gradient(white,SlateGray);
+             background: radial-gradient(DarkGray,SlateGray);
 			 margin-top:80px;
 			 padding: 30px 0;
 	} 
@@ -256,6 +256,27 @@
 		font-weight: bold;
 	}
 	
-     		
+/*--------------- Marcas -------------------*/  
+
+ .marcas {
+        margin: 90px auto; /* Quanto maior o valor, mais distante ficará*/
+ }	
+ 
+ .col-5 {
+         width: 200px; /* Edita a largura das imagens*/
+ }
+
+/* Edita as características das imagens*/
+ .col-5 img{
+    width: 100;
+    cursor: pointer;
+    filter: grayscale(90%); /* Torna as imagens cinzas */
+ }
+
+/* Muda a cor ao passar o mouse nas imagens */
+ .col-5 img:hover{
+	 filter: grayscale(0%); /*Retira o cinza ao passar as imagens*/
+ } 
+ 
 
 		 
