@@ -144,15 +144,15 @@
     /*Edita a classe col-4*/ 
     .col-4{
 		flex-basis: 25%;
-		padding: 10px;
-		max-width: 200px;
+		padding: 0.1px; /*Quanto menor o pixel, maior será a imagem*/
+		max-width: 270px;
 		margin-bottom: 50px;
 		transition: transform 1s;
 	}
 	
 	 /*Edita o tamanho das imagens da classe col-4*/ 
 	.col-4 img{
-		width: 100%;
+		width: 110%;
 	}	
 	
 	/*Edita a classe titulo*/ 
