@@ -145,8 +145,8 @@
     .col-4{
 		flex-basis: 25%;
 		padding: 0.1px; /*Quanto menor o pixel, maior será a imagem*/
-		max-width: 270px;
-		margin-bottom: 50px;
+		max-width: 210px;
+		margin-bottom: 60px;
 		transition: transform 1s;
 	}
 	
