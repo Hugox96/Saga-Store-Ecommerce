@@ -195,7 +195,7 @@
 
     /*Cria o efeito hover nas imagens da classe col-4*/
     .col-4:hover{
-           transform: translateX(-15px);
+           transform: translateX(-35px); /* Números negativos irá movimentar pela esquerda*/ 
 	}
 
  /*---------------Oferta-------------------*/
@@ -214,6 +214,10 @@
 		font-weight: bold;
 		
 	}
+	
+	.col-2:hover{
+		    transform: translateX(-30px);
+	}     			
 /*--------------- Depoimentos -------------------*/	
 	
 	.depoimentos{
@@ -277,6 +281,46 @@
  .col-5 img:hover{
 	 filter: grayscale(0%); /*Retira o cinza ao passar as imagens*/
  } 
+ 
+ /* ---------- Rodapé ------------*/
+ 
+ .Rodape{
+	 background:#708090;
+	 color: black;
+	 font-size: 14px;
+	 padding: 60px 0 20px;
+ }
+ 
+ .Rodape p{
+	 color: black;
+ }
+
+ .Rodape h3{
+	 color: white;
+	 margin-bottom:20px;
+ }	 
+ 
+ .rodape-col-1, .rodape-col-2, .rodape-col-4 {
+	min-width: 180px;
+    margin-bottom: 20px;
+ }
+
+ .rodape-col-1{
+	flex-basis:30%;
+ }
+
+ .rodape-col-2{
+    flex:1;
+    text-align: center;
+ }
+
+ .rodape-col-2 img{
+    width: 300px;
+    margin-bottom: 20px;
+ }	
+	 
+ 
+ 
  
 
 		 
