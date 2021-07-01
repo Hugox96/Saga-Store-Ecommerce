@@ -184,6 +184,7 @@
         font-weight: bold;
 	}
 	
+	 /*Edita a classe col-4 p*/ 
 	.col-4 p{
 		font-size: 15px;
 	}
@@ -313,15 +314,18 @@
     margin-bottom: 20px;
  }
 
+ /* Edita a classe rodape-col-1*/ 
  .rodape-col-1{
-	flex-basis:16%;
+	flex-basis:16%; /* Quanto maior o valor, mas para direita a imagem fica*/
  }
 
+/* Edita a classe rodape-col-2*/ 
  .rodape-col-2{
     flex:1;
     text-align: center;
  }
 
+/* Edita a imagem da classe rodape-col-2*/ 
  .rodape-col-2 img{
     width: 290px;
     margin-bottom: 10px;
@@ -333,26 +337,69 @@
      list-style-type: none;
  }
 
+/* Edita a classe app-logo*/
  .app-logo{
     margin-top: 30px;
  }
 
+/* Edita a classe da imagem app-logo*/
  .app-logo img{
     width: 170px;
  }
 
+/* Edita a classe rodape hr */
  .Rodape hr{
     border: none;
     background: black;
-    height: 1px;
+    height: 4px;
     margin: 20px;
  }
 
+/* Edita a classe copyright*/
 .copyright{
     text-align: center;
-}	
-	 
- 
+}
+
+/* Edita a classe menu-icon*/
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+	display: none;
+}
+
+/* ------------- Media Query for menu ---------*/
+
+@media only screen and (max-width:800px) { 
+
+
+
+   /* Edita a classe nav ul quando reduzimos a tela*/ 
+    nav ul {
+        position: absolute;
+		top: 200px; /* Quanto maior o valor, mais baixo ficará no site*/
+		left: 0;
+		background: black;
+		width: 100%;
+	}
+
+    /* Edita a classe nav ul il quando reduzimos a tela*/ 
+     nav ul li {
+        display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+    /* Edita a classe nav ul il a mudando a cor dos itens quando reduzimos a tela*/ 
+    nav ul li a{
+        color: #fff;		
+}
+
+    /* Edita a classe menu-icon quando reduzimos a tela*/ 
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }		
+}
  
  
 
