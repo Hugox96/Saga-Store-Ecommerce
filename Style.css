@@ -84,12 +84,10 @@
 	
 	 /* Edita a classe col-2 h1*/
 	.col-2 h1{
-		font-size:50px;
+		font-size:45px;
 		line-height:20px;
 		margin: 25px 0;
 	}
-	
-	
 	
 	 /* Edita a classe btn*/
 	.btn{
@@ -217,7 +215,7 @@
 	}
 	
 	.col-2:hover{
-		    transform: translateX(-30px);
+		    transform: translateX(-20px);
 	}     			
 /*--------------- Depoimentos -------------------*/	
 	
@@ -367,11 +365,9 @@
 	display: none;
 }
 
-/* ------------- Media Query for menu ---------*/
+/* ------------- Media Query para o menu ---------*/
 
 @media only screen and (max-width:800px) { 
-
-
 
    /* Edita a classe nav ul quando reduzimos a tela*/ 
     nav ul {
@@ -380,6 +376,8 @@
 		left: 0;
 		background: black;
 		width: 100%;
+		overflow:hidden; /* Faz com que os itens do menu só apareçam ao clicar o icone*/
+		transition:0.5s; /*Tempo para o menu aparecer, quanto maior, mais tempo*/
 	}
 
     /* Edita a classe nav ul il quando reduzimos a tela*/ 
@@ -398,9 +396,19 @@
     .menu-icon{
         display: block;
         cursor: pointer;
-    }		
+    }	
 }
  
+ /* Media Query para telas menores que 600px*/ 
  
-
+ @media only screen and (max-width:600px) {
+	 
+    .row{
+		  text-align: center;
+	}  
 		 
+ .col-2, .col-3, .col-4 {
+    flex-basis: 100%;
+    }	
+	
+ }	
