@@ -15,7 +15,7 @@
   .navbar{
 	  display: flex;
 	  align-items: center;
-	  padding: 20px; /* Diminui a margem do aba de navegação*/
+	  padding: 35px; /* Diminui a margem do aba de navegação*/
     }
 	
    nav{
@@ -28,7 +28,7 @@
        display: inline-block;
        list-style-type: none;
 	   font-family: Times New Roman;
-	   font-size: 20px;
+	   font-size: 17.3px;
    } 
    /* Edita as informações dos menus*/
     nav ul li{
@@ -79,13 +79,13 @@
 	 /* Edita a classe col-2 img*/
 	.col-2 img{
 		max-width:100%;
-		padding: 40px 0;
+		padding: 80px 0;
 	}
 	
 	 /* Edita a classe col-2 h1*/
 	.col-2 h1{
 		font-size:45px;
-		line-height:20px;
+		line-height:35px;
 		margin: 25px 0;
 	}
 	
@@ -213,10 +213,7 @@
 		font-weight: bold;
 		
 	}
-	
-	.col-2:hover{
-		    transform: translateX(-20px);
-	}     			
+	 			
 /*--------------- Depoimentos -------------------*/	
 	
 	.depoimentos{
@@ -314,7 +311,7 @@
 
  /* Edita a classe rodape-col-1*/ 
  .rodape-col-1{
-	flex-basis:16%; /* Quanto maior o valor, mas para direita a imagem fica*/
+	flex-basis:5%; /* Quanto maior o valor, mas para direita a imagem fica*/
  }
 
 /* Edita a classe rodape-col-2*/ 
@@ -365,7 +362,7 @@
 	display: none;
 }
 
-/* ------------- Media Query para o menu ---------*/
+/* ------------- Media Query para o menu, irá editar em telas menores ou iguais a 800px ---------*/
 
 @media only screen and (max-width:800px) { 
 
@@ -396,10 +393,56 @@
     .menu-icon{
         display: block;
         cursor: pointer;
-    }	
-}
+    	
+   }
  
- /* Media Query para telas menores que 600px*/ 
+}
+
+
+/*-----------------Página dos Produtos --------------*/
+
+/*---- Alinha as imagens do produtos ------*/ 
+.row-2{
+	justify-content: space-between;
+	margin: 100px auto 50px;
+}	
+
+/* ----- Edita a Tag para a caixa de seleção */
+select{
+	border: 3px solid black;
+	padding: 5px;
+}	
+
+/* ----- Edita a classe para os índices da página*/
+.page-btn{
+	margin: 0 auto 80px;
+}
+
+/* ----- Edita a classe para os índices da página, formando as caixinhas*/
+.page-btn span{
+	display: inline-block;
+	border: 3px solid black;
+	margin-left: 10 px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query para telas menores que 600px*/ 
  
  @media only screen and (max-width:600px) {
 	 
@@ -408,7 +451,14 @@
 	}  
 		 
  .col-2, .col-3, .col-4 {
-    flex-basis: 100%;
+    flex-basis:100%;
+    }
+
+/* Edita a classe de navegação*/
+  .navbar{
+	  display: flex;
+	  align-items: center;
+	  padding: 5px; /* Diminui a margem do aba de navegação*/
     }	
 	
  }	

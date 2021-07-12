@@ -16,14 +16,14 @@
 <body>
 
 
-<div class="header"> 
+
   <!-- Classe container para agrupar os elementos da página-->
   <div class= "container"> 
 
    <!-- Classe navbar para editar os elementos do menu -->
         <div class="navbar">
             <div class="logo">  <!-- Classe para editar o logo da página -->
-	         <img src="images/logo2.png" width= "230px">
+	         <img src="images/logo2.png" width= "200px">
         </div>	
    <nav> 
       <ul id="MenuItems"> <!-- Tag para editar os links do menu -->
@@ -36,62 +36,30 @@
 	 <img src="images/cart.png"  width="35px" height="30px">
 	 <img src="images/menu.png" class ="menu-icon" onclick="menutoggle()">
    </div>
-  
-  <!-- Classe para editar linhas da página -->
-  <div class="row">
-       <div class= "col-2"> 
-          <h1> Vista-se com o esporte </h1> <br>
-		  <p> Sua roupa defini quem você é e quem você quer ser. <br>
-		      Se você gosta e é fan de esporte a saga store é um ótimo lugar 			  <br>
-		      para você encontrar seus produtos preferidos.  </p>
-			  <a href="" class="btn"> Conheça nossos produtos &#8594; </a>
-	     </div>
-	  
-	  <!-- Classe para editar a imagem principal da página -->   
-	   <div class= "col-2"> 
-	        <img src="images/image1.png">	   
-	   </div>
-	   
-     <!-- Fim da classe row-->
-      </div> 
+
    <!-- Fim da classe container-->
    </div> 
- <!-- Fim da classe header-->  
- </div>
+
  
- <!------------- Categorias --------------------->
- <div class= "categorias">
  
-  
-    <div class="small-container">
-	
-	 <!-- Classe para manter as imagens alinhadas-->
-		<div class="row">
-		
-	<!-- A classe col-3 permite editar o tamanho da imagem -->	
-		<div class="col-3"> 
-		  <img src="images/category-1.jpg">
-		</div>
-		  		
-		<div class="col-3"> 
-		  <img src="images/category-3.jpg">
-		</div>
-		
-		<div class="col-3"> 
-		 <img src="images/category-4.jpg">
-        </div>
-		
-	</div>
-  <!-- Fim da classe small-container--> 
-  </div>
-  
-  <!-- Fim da classe categorias--> 
-</div>  
   
   <!------------- Produtos --------------------->
   
  <div class="small-container">
-       <h2 class="titulo"> Nossos Produtos </h2>
+       
+	   <!-- A classe row-2 é responsável pela edição da caixa select e os título 
+	     todos os produtos-->
+	    <div class="row row-2">
+	    <h2> Todos os Produtos </h2> 
+		
+		<select>
+		   <option> Escolher por Preço </option>
+		   <option> Escolher por popularidade </option>
+		   <option> Escolher por vendas </option>
+		   <option> Escolher por classificação </option>
+		   </select>
+		</div>   
+	   
 	   
 	   <!-- classe para manter as imagens alinhadas-->
 	   <div class="row">
@@ -166,15 +134,15 @@
 		  		  
 		  <p> R$:189,00 </p>
 		</div>
-	 <!-- Fim da classe row-->	
-	</div>
+	 <!-- Fim da classe row para os primeiros produtos -->	
+	 </div>
 	
-	<h2 class="titulo"> Nossos Lançamentos  </h2>
+	
 	
 	    <!-- classe para manter as imagens alinhadas-->
 		<div class="row">
-		
-		<!--Camisa Milan 21/22 Home - P ao GG Imagem -->
+	
+	<!--Camisa Milan 21/22 Home - P ao GG Imagem -->
 		  <div class="col-4"> 
 		  <img src="images/milan.jpg">
 		  <h4> Milan 21/22 Home - P ao GG </h4>
@@ -241,153 +209,23 @@
 		  		  
 		  <p> R$:120,00 </p>
 		 </div>
-		 
-	<!-- Fim da classe row-->	 
-	</div> 
+		
+	  <!-- Fim da classe row para os segundos produtos-->       
+	   </div>	
+ 
+ 
+ <!-- Classe para editar os índices das páginas -->
+ <div class="page-btn">
+    <span> 1 </span> <!-- Tag para caixinha dos índices-->
+	<span> 2 </span>
+	<span> 3 </span>
+	<span> 4 </span> 
+	<span> &#8594; </span> <!-- Figurinha de uma seta-->
+ </div>
+ 
  <!-- Fim da classe small-container-->	  	
  </div>	
- 
- <!--- Oferta Exclusiva-->
- <div class="oferta">
-    <div class="small-container">    
-       <!--classe row para alinhar a imagem -->	
-	  <div class="row"> 
-         <div class="col-2">
-              <img src="images/psg.jpg" class ="oferta1">
-         </div>
-   
-       <!--classe row para alinhar o texto -->	
-        <div class="col-3">
-		      
-			   <a href=""> <h2> PSG 21/22 Home - P ao GG </h2> </a> 
-			   
-			   <br>
-		
-			<small> O Paris Saint-Germain Football Club, também conhecido como Paris Saint-Germain ou pela sua sigla "PSG", é um clube de futebol profissional da França, com sede em Paris. 
-			As suas cores são as cores tradicionais da cidade de Paris, o azul e o vermelho, e de Saint-Germain, distrito nos arredores de Paris, branco. 
-			O clube teve origem em 1970, a partir da fusão entre Paris Football Club, criado um ano antes, e do Stade Saint-Germain, fundado em 1904. 
-			</small>  <br> 
-		    
-			<br>
-			
-			<a href=""; class="btn"> Compre Agora &#8594; </a>
-		 </div>
-	   <!-- Fim da classe row-->	
-	</div>
-  <!-- Fim da classe small-container-->	
-  </div> 
-   <!-- Fim da classe oferta-->	
-</div>
-		
- 
- <!--- Depoimentos -->
-  <div class="depoimentos">
-    <div class="small-container">
-	 <!--- Classe para alinhar os depoimentos -->
-      <div class ="row"> 
-	  
-	       <!--- Depoimento Ronaldinho Gaucho -->
-	    <div class="col-3">
-		  <i class="fa fa-quote-left"></i>
-		    <p> Comprei na saga store as novas camisa da seleção. <br> 
-		        Não tenho o que reclamar, atendimento perfeito.</p>
-		   
-		     <div class="Avaliação">
-			  <i class="fa fa-star"></i>
-			  <i class="fa fa-star"></i>
-			  <i class="fa fa-star"></i>
-			  <i class="fa fa-star"></i>
-			  <i class="fa fa-star-o"></i>
-		    </div>
-		   
-            <img src="images/depo1.jpg"> 
-		   
-		    <h3> Ronaldinho Gaucho </h3>	
-          </div> <!-- Fim do depoimento RG10-->
-		  
-		   
-	       <!--- Depoimento Neymar -->
-		  <div class="col-3">
-		    <i class="fa fa-quote-left"></i>
-		   <p>  Lucas é um ótimo comerciante, meu parça. 
-		        Preços acessíveis e ótima qualidade.</p>
-		   
-		    <div class="Avaliação">
-			  <i class="fa fa-star"></i>
-			  <i class="fa fa-star"></i>
-			  <i class="fa fa-star"></i>
-			  <i class="fa fa-star"></i>
-			  <i class="fa fa-star-o"></i>
-		   </div>
-		   
-           <img src="images/depo2.jpg">
-            
-            <h3> Neymar Jr </h3>			  
-          </div> <!--- Fim do Depoimento Neymar -->
-		  
-		  
-		   <!--- Depoimento Gabigol -->
-		  <div class="col-3">
-		   <i class="fa fa-quote-left"></i>
-		   <p> Compro todos meus relógios na Saga Stores, 
-		   eles que me indicaram jogar no Flamengo. </p>
-		   
-		    <div class="Avaliação">
-			  <i class="fa fa-star"></i>
-			  <i class="fa fa-star"></i>
-			  <i class="fa fa-star"></i>
-			  <i class="fa fa-star"></i>
-			  <i class="fa fa-star-o"></i>
-		   </div>
-		   
-           <img src="images/depo3.jpg">
-		   
-		    <h3> Gabigol </h3> 	  
-          </div> <!--- Fim do Depoimento Gabigol -->			  	 
-      </div> <!---Fim da classe para alinhar os depoimentos -->
-	   
-     </div><!-- Fim da classe small container -->
-  <!-- Fim da classe depoimentos -->	  
-  </div> 
-  
-  
-  
-<!------ Marcas ------>
- <div class="marcas">
-   <div class="small-container">
-   	 <!--- Classe para alinhar as imagens das marcas -->
-	 <div class= "row">
-	   
-	     <!--- Logo Adidas -->
-	    <div class="col-5">          
-          <img src="images/logo-adidas.png">
-        </div>
-      <!--- Logo Nba -->
-	   <div class="col-5">          
-          <img src="images/nba-logo.png">
-        </div>
-		
-		<!--- Logo Premier -->
-		<div class="col-5">          
-          <img src="images/premier-logo.png">
-        </div>
-		
-		<!--- Logo Nike -->	
-		<div class="col-5">          
-          <img src="images/nike-logo.png">
-        </div>
-       
-	    <!--- Logo Champions -->	
-	    <div class="col-5">
-		   <img src="images/puma-logo.jpg">
-		</div>   
-	   
-     <!-- Fim da classe row-->	   
-	 </div>
-	 <!-- Fim da classe small-container-->	   
-    </div>
-	<!-- Fim da classe marcas-->	   
- </div>
+
 
  <!---------- Rodapé ---------->
  <div class="Rodape">
