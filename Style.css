@@ -108,7 +108,12 @@
 	 /* Edita a classe header*/
 	.header{
              background: radial-gradient(white,SlateGray);
-	}			 
+	}	
+  
+    .headerProdutos{
+            	background: radial-gradient(gray,SlateGray);
+	}
+	
 	
 	.header .row {
 		margin-top: 70px;
@@ -404,13 +409,13 @@
 /*---- Alinha as imagens do produtos ------*/ 
 .row-2{
 	justify-content: space-between;
-	margin: 100px auto 50px;
+	margin: 100px auto 70px; /* Defini a distância das imagens com os títulos*/
 }	
 
 /* ----- Edita a Tag para a caixa de seleção */
 select{
-	border: 3px solid black;
-	padding: 5px;
+	border: 1px solid black;
+	padding: 1px;
 }	
 
 /* ----- Edita a classe para os índices da página*/
@@ -421,7 +426,7 @@ select{
 /* ----- Edita a classe para os índices da página, formando as caixinhas*/
 .page-btn span{
 	display: inline-block;
-	border: 3px solid black;
+	border: 1px solid black;
 	margin-left: 10 px;
 	width: 40px;
 	height: 40px;
@@ -431,15 +436,11 @@ select{
 }
 
 
-
-
-
-
-
-
-
-
-
+/*Cria o efeito hover nas caixinhas da página*/
+    .page-btn span:hover{
+           background:LightSlateGray; 
+		   color:#fff;
+	}
 
 
 /* Media Query para telas menores que 600px*/ 
