@@ -1,0 +1,235 @@
+<!Doctype html>
+
+<html>
+
+<!-- Configurações da página -->
+<head>
+   <meta charset= "UTF-8"> 
+   <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+   
+   <title> EagleStore | Ecommerce </title>
+   <link rel="stylesheet" href="style.css"> <!-- Link com o arquivo css -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500;1,700&display=swap" rel="stylesheet"> <!-- Link para a fonte-->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+
+
+  <!-- Classe container para agrupar os elementos da página-->
+  <div class= "container"> 
+
+   <!-- Classe navbar para editar os elementos do menu -->
+        <div class="navbar">
+            <div class="logo">  <!-- Classe para editar o logo da página -->
+	         <img src="images/logo2.png" width= "200px">
+        </div>	
+   <nav> 
+      <ul id="MenuItems"> <!-- Tag para editar os links do menu -->
+          <li> <a href=""> Ínicio </a> </li> 
+          <li> <a href=""> Produtos </a> </li>
+          <li> <a href=""> Contato </a> </li>
+          <li> <a href=""> Comprar </a> </li>   	   		
+        <ul>
+     </nav>
+	 <img src="images/cart.png"  width="35px" height="30px">
+	 <img src="images/menu.png" class ="menu-icon" onclick="menutoggle()">
+   </div>
+
+   <!-- Fim da classe container-->
+   </div> 
+
+
+   <!-- Produto 1 -->
+   
+   <div class ="small-container">
+      <div class="row">
+	  
+	    <div class="col-2">
+         <img src="images/product-1-v2.png">
+        </div>	
+		
+        <div class="col-2">
+		  <p> Inicio/Camisas </p>
+		  <h1> Juventus 21/22 Home - P ao GG </h1>
+		  <h4> R$:149,00 </h4>
+		   
+		<select>
+            <option> Tamanho </option>
+			<option> M </option>
+			<option> G </option>
+			<option> P </option>
+		</select>
+     </div>
+    </div>
+  </div>   
+     
+   
+   
+   
+    
+ 
+ 
+  
+  <!------------- Detalhes dos Produtos --------------------->
+	
+	<div class= "small-container"> 
+	
+	    <!-- classe para manter as imagens alinhadas-->
+		<div class="row">
+	
+	<!--Camisa Milan 21/22 Home - P ao GG Imagem -->
+		  <div class="col-4"> 
+		  <img src="images/milan.jpg">
+		  <h4> Milan 21/22 Home - P ao GG </h4>
+		  
+		<!--Camisa Milan 21/22 Home - P ao GG Avaliação-->
+		  <div class="Avaliação">
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star-o"></i>
+		  </div>
+		  		  
+		  <p> R$:120,00 </p>
+		 </div>
+				
+		<!--Camisa São Paulo 21/22 Home - P ao GG Imagem -->
+		  <div class="col-4"> 
+		  <img src="images/SaoPaulo.jpg">
+		  <h4> São Paulo 21/22 Home - P ao GG </h4>
+		  
+		<!-- Camisa São Paulo 21/22 Home Avaliação-->
+		  <div class="Avaliação">
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star-o"></i>
+		  </div>
+		  		  
+		  <p> R$:120,00 </p>
+		 </div>
+		
+		  <!-- Liverpool 21/22 Home - P ao GG Imagem -->
+		  <div class="col-4"> 
+		  <img src="images/liverpool.jpg">
+		  <h4> Liverpool 21/22 Home - P ao GG </h4>
+		  
+		<!-- Liverpool 21/22 Home - P ao GG Avaliação -->
+		  <div class="Avaliação">
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star-o"></i>
+		  </div>
+		  		  
+		  <p> R$:120,00 </p>
+		 </div>
+		 
+		  <!-- Barcelona 21/22 home - P ao GG Imagem-->
+		  <div class="col-4"> 
+		  <img src="images/Barcelona.jpg">
+		  <h4> Barcelona 21/22 home - P ao GG </h4>
+		  
+		  <!--Tênis Adidas Avaliação-->
+		  <div class="Avaliação">
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star-o"></i>
+		  </div>
+		  		  
+		  <p> R$:120,00 </p>
+		 </div>
+		
+	  <!-- Fim da classe row para os segundos produtos-->       
+	   </div>	
+ 
+ 
+ <!-- Classe para editar os índices das páginas -->
+ <div class="page-btn">
+    <span> 1 </span> <!-- Tag para caixinha dos índices-->
+	<span> 2 </span>
+	<span> 3 </span>
+	<span> 4 </span> 
+	<span> &#8594; </span> <!-- Figurinha de uma seta-->
+ </div>
+ 
+ <!-- Fim da classe small-container-->	  	
+ </div>	
+
+
+ <!---------- Rodapé ---------->
+ <div class="Rodape">
+    <div class="container">
+	  <div class="row">
+	 
+     <!---------- Classe para o texto sobre aplicativo ---------->	 
+	<div class="rodape-col-1">
+            <h3> Baixe nosso aplicativo </h3>    
+			<!-- Div para as imagens do Google play-->
+			<div class="app-logo">
+              <img src="images/play-store.png">
+			  <img src="images/app-store.png">
+			</div>
+	</div> 
+  
+  <!---------- Classe para o texto sobre a loja ---------->	 
+   <div class="rodape-col-2">
+     <div <center> <img src="images/logo2.png"> </center> </div>
+           <p> Nosso objetivo é tornar os artigos esportivos 
+		       um novo hábito para a vida </p>		  
+   </div> 
+	
+	<!---------- Classe para as redes sociais ---------->	
+	   <div class="rodape-col-4">
+	      <h3> Siga-nos </h3>
+		     <ul>
+		       <li> <a href=""> Facebook </a>      </li>
+			   <li> <a href=""> Instagram </a>     </li>
+			   <li> <a href=""> Shoppe </a>        </li>
+			   <li> <a href=""> Mercado Livre </a> </li>
+			</ul>
+       </div> 	
+	   
+ <!-- Fim da classe row-->	 
+	</div>
+	 <hr>
+	  <p class="copyright"> Desenvolvido por Hugo Alves <p>
+	 </hr>  
+	
+ <!-- Fim da classe container-->	
+   </div> 
+ <!-- Fim da classe rodapé -->	   
+</div> 
+
+<!---------------- Js para toggle menu --------------------------->
+	<script> 
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight= "0px";
+ 		
+        function menutoggle() {
+		 if(MenuItems.style.maxHeight == "0px")
+		   
+		    {
+			   MenuItems.style.maxHeight = "200px";
+			}
+		 
+		 else 
+		    {
+  		       
+			   MenuItems.style.maxHeight = "0px";
+			}
+		}	
+	</script>	  
+
+</body>
+
+</html>   
