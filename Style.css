@@ -107,7 +107,9 @@
 	
 	 /* Edita a classe header*/
 	.header{
-             background: radial-gradient(white,SlateGray);
+             background: radial-gradient(white,SlateGray);  
+			 
+			 
 	}	
   
     .headerProdutos{
@@ -443,8 +445,47 @@ select{
 	}
 
 
-/* Media Query para telas menores que 600px*/ 
- 
+/*-----------------Página dos detalhes dos produtos --------------*/
+
+
+.DetalhesProdutos {
+	margin-top: 10px; /* Ok*/ 
+}
+
+.DetalhesProdutos .col-2 img{
+	   padding:5;
+}	   
+	
+.DetalhesProdutos .col-2{
+	   padding: 20px;
+}	   
+	
+.DetalhesProdutos h4 {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+} 
+
+.DetalhesProdutos select{
+	display: block;
+	padding: 5px;
+	margin-top: 17px;
+	border: 2px solid black;
+}	
+	
+.DetalhesProdutos input{ 
+   width: 45px;
+   height: 40px;
+   padding-left:10px;
+   font-size: 20px;
+   margin-right: 20px;
+   border: 2px solid black;
+}  
+      
+	
+	
+   
+/* Media Query para telas menores que 600px*/  
  @media only screen and (max-width:600px) {
 	 
     .row{
