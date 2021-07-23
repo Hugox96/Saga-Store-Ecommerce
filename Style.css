@@ -111,9 +111,14 @@
 			 
 			 
 	}	
-  
+   
+    /* Edita a classe headerProdutos*/
     .headerProdutos{
             	background: radial-gradient(gray,SlateGray);
+	}
+	
+	.headerDetalhesProdutos{
+		background: radial-gradient(gray,SlateGray);
 	}
 	
 	
@@ -445,22 +450,23 @@ select{
 	}
 
 
-/*-----------------Página dos detalhes dos produtos --------------*/
+/*----------------- Página dos detalhes dos produtos --------------*/
 
 
-.DetalhesProdutos {
-	margin-top: 10px; /* Ok*/ 
+.DetalhesProdutos{
+	margin-top: 5px; /*Quanto maior o valor, maior a distancia em relação ao menu*/ 
+    margin-bottom:10px;
 }
 
 .DetalhesProdutos .col-2 img{
-	   padding:5;
+	   padding:10;
 }	   
 	
 .DetalhesProdutos .col-2{
-	   padding: 20px;
+	   padding: 1px;  /*Quanto maior o valor, menor a imagem*/ 
 }	   
 	
-.DetalhesProdutos h4 {
+.DetalhesProdutos h4{
     margin: 10px 0;
     font-size: 20px;
     font-weight: bold;
@@ -479,10 +485,18 @@ select{
    padding-left:10px;
    font-size: 20px;
    margin-right: 20px;
-   border: 2px solid black;
+   border: 2fpx solid black;
 }  
       
-	
+.small-img-row{
+    display: flex;
+    justify-content: space-bettween;
+}
+
+.small-img-col{
+    flex-basis: 40%;
+    cursor: pointer;
+} 	
 	
    
 /* Media Query para telas menores que 600px*/  

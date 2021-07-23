@@ -1,0 +1,17 @@
+<div class="small-img-row">
+		 
+		    <div class="small-img-col">
+             	<img src="images/gallery-2.jpg">		
+		    </div>
+			 
+			<div class="small-img-col">
+             	<img src="images/gallery-3.jpg">		
+		    </div>
+			
+			<div class="small-img-col">
+             	<img src="images/gallery-4.jpg">		
+		    </div>
+			
+		</div>
+
+</div>
