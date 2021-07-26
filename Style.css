@@ -454,16 +454,16 @@ select{
 
 
 .DetalhesProdutos{
-	margin-top: 5px; /*Quanto maior o valor, maior a distancia em relação ao menu*/ 
-    margin-bottom:10px;
+	margin-top: 80px; /*Quanto maior o valor, maior a distancia em relação ao menu*/ 
+    margin-bottom:70px;
 }
 
 .DetalhesProdutos .col-2 img{
-	   padding:10;
+	   padding:0;
 }	   
 	
 .DetalhesProdutos .col-2{
-	   padding: 1px;  /*Quanto maior o valor, menor a imagem*/ 
+	   padding:5px;  /*Quanto maior o valor, menor a imagem*/ 
 }	   
 	
 .DetalhesProdutos h4{
@@ -485,16 +485,17 @@ select{
    padding-left:10px;
    font-size: 20px;
    margin-right: 20px;
-   border: 2fpx solid black;
+   border: 2px solid black;
 }  
       
 .small-img-row{
     display: flex;
     justify-content: space-bettween;
-}
+} 
+
 
 .small-img-col{
-    flex-basis: 40%;
+    flex-basis: 26.5%;
     cursor: pointer;
 } 	
 	
