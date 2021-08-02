@@ -495,7 +495,7 @@ select{
 
 
 .small-img-col{
-    flex-basis: 26.5%;
+    flex-basis: 20.3%; /*Quanto maior o numero de imagens, menor deve ser o valor*/
     cursor: pointer;
 } 	
 	

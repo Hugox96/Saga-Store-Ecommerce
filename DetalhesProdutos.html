@@ -50,23 +50,29 @@
       <div class="row">
 	  
 	  <div class="col-2">
-         <img src="images/juventus1.jpg" width="79%">
+         <img src="images/juventus1.jpg" width="79%" id="ProdutoImg">
 		 
 		    <div class="small-img-row">
+			
+			<div class="small-img-col">
+			   <img src="images/juventus1.jpg" class="small-img">
+			</div>   
 		 
 		    <div class="small-img-col">
-             	<img src="images/juventus2.jpg" >		
+             	<img src="images/juventus2.jpg" class="small-img">		
 		    </div>
 			 
 			<div class="small-img-col">
-             	<img src="images/juventus3.jpg" >		
+             	<img src="images/juventus3.jpg" class="small-img">		
 		    </div>
 			
 			<div class="small-img-col">
-             	<img src="images/juventus4.jpg" >		
-		    </div>	
+             	<img src="images/juventus4.jpg" class="small-img">		
+		    </div>
 			
-        </div> 	 	 
+		<!--Fim da class small-img-row-->	
+        </div>
+       <!--Fim da class col-2-->		
       </div> 
 		
         <div class="col-2">
@@ -253,7 +259,39 @@
 			   MenuItems.style.maxHeight = "0px";
 			}
 		}	
-	</script>	  
+	</script>
+	
+<!---------------- Js para detalhes dos produtos --------------------------->	
+	
+	
+	<script>
+            var ProdutoImg = document.getElementById("ProdutoImg");
+			var SmallImg= document.getElementsByClassName("small-img");
+              
+            SmallImg[0].onclick=function()
+               {  			
+				ProdutoImg.src = SmallImg[0].src;
+			   }
+			   
+            
+            SmallImg[1].onclick=function()
+                {
+                  ProdutoImg.src=SmallImg[1].src;
+                }
+
+            SmallImg[2].onclick=function()
+                {
+                   ProdutoImg.src=SmallImg[2].src;
+                }
+
+            SmallImg[3].onclick=function()
+                {
+                    ProdutoImg.src=SmallImg[3].src;
+                }					
+             			   
+    </script> 
+      
+        	  
 
 </body>
 
