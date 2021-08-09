@@ -454,8 +454,9 @@ select{
 
 
 .DetalhesProdutos{
-	margin-top: 80px; /*Quanto maior o valor, maior a distancia em relação ao menu*/ 
+	margin-top: 80px; /*Quanto maior o valor, maior a distancia em relacao ao menu*/ 
     margin-bottom:70px;
+	align: center;
 }
 
 .DetalhesProdutos .col-2 img{
@@ -504,7 +505,7 @@ select{
  @media only screen and (max-width:600px) {
 	 
     .row{
-		  text-align: center;
+	  text-align: center;
 	}  
 		 
  .col-2, .col-3, .col-4 {
@@ -517,5 +518,23 @@ select{
 	  align-items: center;
 	  padding: 5px; /* Diminui a margem do aba de navegação*/
     }	
+	
+	/* Alinha os itens da página para esquerda qdo a resolucao é menor ou igual a 600px*/
+	.DetalhesProdutos .row{
+		text-align: left;
+	}
+	
+	/* Edita o preenchimento do classe col-2*/
+	.DetalhesProdutos .col-2{
+		padding: 15px 0; /* Quanto maior o valor, maior a distancia do menu*/
+	}
+	
+	/*Edita os textos h2*/
+	.DetalhesProdutos .h2{
+		font-size: 25px;
+		line-height:22px;
+	}
+	
+		
 	
  }	
