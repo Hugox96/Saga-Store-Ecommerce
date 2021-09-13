@@ -290,82 +290,114 @@
 	 filter: grayscale(0%); /*Retira o cinza ao passar as imagens*/
  } 
  
- /* ---------- Rodapé ------------*/
+ /* ---------- footer ------------*/
  
  
-/* Edita as características do rodape*/
- .Rodape{
-	 background:#708090;
-	 color: black;
-	 font-size: 14px;
-	 padding: 20px 0 10px;
- }
- 
- 
-/* Edita as características do paragráfo presente no rodape*/
- .Rodape p{
-	 color: black;
-	 text-align: center;
- }
+/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
 
 
-/* Edita as características dos textos*/
- .Rodape h3{
-	 color: white;
-	 margin-bottom:20px;
- }	 
- 
- /* Edita as classes*/ 
- .rodape-col-1, .rodape-col-2, .rodape-col-4 {
-	min-width: 180px;
-    margin-bottom: 20px;
- }
+.container{
+	max-width: 1170px; /*Edita a largura das informações do footer-col*/
+	margin:auto;
+}
 
- /* Edita a classe rodape-col-1*/ 
- .rodape-col-1{
-	flex-basis:5%; /* Quanto maior o valor, mas para direita a imagem fica*/
- }
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
 
-/* Edita a classe rodape-col-2*/ 
- .rodape-col-2{
-    flex:1;
-    text-align: center;
- }
+ul{
+	list-style: none;
+}
 
-/* Edita a imagem da classe rodape-col-2*/ 
- .rodape-col-2 img{
-    width: 290px;
-    margin-bottom: 10px;
-	margin-left: auto;
-    margin-right: auto; 
- }
+.footer{
+	background-color:black; /*Edita a cor de fonta da classe footer*/
+    padding: 80px 0; /* Edita o preenchimento da classe footer*/
+}
 
- ul{
-     list-style-type: none;
- }
+.footer-col{
+   width: 25%; /* Edita largura das informações dentro da classe footer-col*/
+   padding: 0 15px;
+}
 
-/* Edita a classe app-logo*/
- .app-logo{
-    margin-top: 30px;
- }
+/* Edita a classe footer-col h4*/
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+/* Edita a classe footer-col h4::before*/
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #48D1CC;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
 
-/* Edita a classe da imagem app-logo*/
- .app-logo img{
-    width: 170px;
- }
+.footer-col ul li:not(:last-child){
+	margin-bottom: 6px;
+}
 
-/* Edita a classe rodape hr */
- .Rodape hr{
-    border: none;
-    background: black;
-    height: 4px;
-    margin: 20px;
- }
+/*Edita a classe dos items presentes no footer*/
+.footer-col ul li a{
+	font-size: 17px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 800;
+	color: white;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+/*Edita o hover presente nos items*/
+.footer-col ul li a:hover{
+	color:  #48D1CC;
+	padding-left: 10px;
+}
+
+/*Edita a classe dos icones das redes sociais*/
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #48D1CC;
+}
+
 
 /* Edita a classe copyright*/
 .copyright{
-    text-align: center;
+	color: white;
+	text-align: center;
 }
+
+
 
 /* Edita a classe menu-icon*/
 .menu-icon{
@@ -407,6 +439,13 @@
         cursor: pointer;
     	
    }
+
+    /* Edita a classe footer-col ao reduzirmos a tela */   
+    .footer-col{
+    width: 100%;
+    margin-bottom: 30px;
+   }
+
  
 }
 
