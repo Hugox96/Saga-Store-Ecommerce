@@ -21,14 +21,14 @@
    nav{
        flex: 1;
        text-align: right;
+   
    }   	   
    
    /* Edita as informações dos menus*/
    nav ul{
        display: inline-block;
        list-style-type: none;
-	   font-family: Times New Roman;
-	   font-size: 17.3px;
+	  
    } 
    /* Edita as informações dos menus*/
     nav ul li{
@@ -36,15 +36,49 @@
        margin-right: 25px;
    } 
    
+   #MenuItems{
+      font-size: 20px;
+	  font-family: 'Poppins',sans-serif;
+	  font-style: bold;
+    }
+		
+	
+	#MenuItems a{
+      color:black;
+    }
+   
+   
+    #MenuItems a:after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 2px;
+    width: 10px;
+    left: 500px;
+	right: 200px;
+	bottom:740px;
+    transition: 0.3s;
+}
+   
+    #MenuItems a:hover:after{
+    width: 20%;
+}
+	
+	 #MenuItems a:hover{
+      color:AliceBlue;
+    }
+	
+
+	
+	
    /* Edita os links do menu*/
    a{
-	   text-decoration: #555;
-	   color: Black;	   
+	   text-decoration: #555;	   
    }  
    
    /* Edita os links do menu ao passar o mouse sobre eles*/
-   a:hover {
-        color: AliceBlue;
+     /* a:hover {
+        color: blue;
     }
 
      /* Edita a tag p pertencente aos paragráfos da página*/
@@ -92,17 +126,23 @@
 	 /* Edita a classe btn*/
 	.btn{
 		display: inline-block;
-		background:	black;
-		color:#fff;
+		background:gray;
+		color:Black;
+		font-weight:bold;
 		padding:8px 30px;
 		margin:20px 0;
 		border-radius:30px;
 		transition: background 0.5s;
 	}
 	
+	.produtos{
+		color:black;
+		background: white;
+	}
+	
 	/* Modifica a cor do botão ao passar o mouse por ele pela cor DodgerBlue*/
 	.btn:hover{
-		background: DodgerBlue;
+		background: AliceBlue;
 	}
 	
 	 /* Edita a classe header*/
@@ -217,6 +257,17 @@
 			 margin-top:80px;
 			 padding: 30px 0;
 	} 
+	
+	#exclusivo{
+		font-size:25px;
+		color:black;
+		font-weight:bold;
+	}
+	
+	#exclusivo:hover{
+		color:AliceBlue;
+	}
+	
 	
 	/*Edita a tag small do texto do mi brand*/ 
 	small{
